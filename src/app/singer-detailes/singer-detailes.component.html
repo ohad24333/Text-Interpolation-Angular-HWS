@@ -1,0 +1,22 @@
+
+<h1>Singer Detailes:</h1>
+<br>
+<br>
+<img width="200px" src="{{singer.imgsrc}}" alt="">
+<br>
+First Name : {{singer.firstName}}
+<br>
+Last Name : {{singer.lastName}}
+<br>
+Age : {{singer.age}}
+<br>
+<h2>Songs:</h2>
+<br>
+<ul>
+    <li *ngFor="let s of singer.songs">
+        {{s}}
+    </li>
+</ul>
+<br>
+<h4>Another Detaile:</h4>
+{{getAnotherDetaile()}}
